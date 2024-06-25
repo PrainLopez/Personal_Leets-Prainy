@@ -34,7 +34,7 @@ function convertBST(root: TreeNode | null): TreeNode | null {
             currNode = currNode.right;
         }
 
-        currNode = stack.pop() as TreeNode;
+        currNode = stack.pop() || new TreeNode();
         currSum += currNode?.val;
         currNode.val = currSum;
 
