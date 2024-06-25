@@ -1,6 +1,7 @@
 # Leetcode practice repo
 It's my own log of Leetcode submission. 
-- included language: `C`,`Java`,`JavaScript`
+- main language: `C`,`Java`,`JavaScript`
+- extras: `C++`,`TypeScript`
 
 I'm trying to sort everything out with non-library data structure, which means impelment data structure in every languages' *standard library*
 
