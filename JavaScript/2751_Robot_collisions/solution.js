@@ -1,5 +1,7 @@
 // Improvements:
-// put index into stack instead of position, stack content doesn't matter for the answer
+// 1 - put index into stack instead of position, stack content doesn't matter for the answer
+// 2 - health can be used as a mark to improve control flow
+// 3 - We don't need left oriented robot in the stack. This includes the incoming bot collides all bots in the stack.
 
 /**
  * @param {number[]} positions
@@ -16,24 +18,29 @@ const survivedRobotsHealths = function (positions, healths, directions) {
 
     const stack = [];
     sortedPos.forEach((val) => {
-        stack.push(val);
+        const rightIndex = serialMap[val];
 
-        while (directions[serialMap[stack.at(-1)]] == "L" && stack?.at(-2) && directions[serialMap[stack.at(-2)]] == "R") {
-            const rightPos = stack.pop()
-            const leftPos = stack.pop();
-            const diff = healths[serialMap[leftPos]] - healths[serialMap[rightPos]]
-            if (diff > 0) {
-                stack.push(leftPos);
-                healths[serialMap[leftPos]] -= 1;
-                healths[serialMap[rightPos]] = 0;
-            } else if (diff < 0) {
-                stack.push(rightPos)
-                healths[serialMap[rightPos]] -= 1;
-                healths[serialMap[leftPos]] = 0;
-            } else {
-                healths[serialMap[leftPos]] = 0;
-                healths[serialMap[rightPos]] = 0;
+        if (directions[rightIndex] == "R") {
+            stack.push(rightIndex);
+        } else {
+            while (stack.length /* && directions[stack.at(-1)] == "R" */ && healths[rightIndex]) {
+                const leftIndex = stack.pop();
+                if (healths[leftIndex] > healths[rightIndex]) {
+                    healths[leftIndex] -= 1;
+                    healths[rightIndex] = 0;
+                    stack.push(leftIndex);
+                } else if (healths[leftIndex] < healths[rightIndex]) {
+                    healths[rightIndex] -= 1;
+                    healths[leftIndex] = 0;
+                } else {
+                    healths[leftIndex] = 0;
+                    healths[rightIndex] = 0;
+                }
             }
+
+            // if (healths[rightIndex]) {
+            //     stack.push(rightIndex);
+            // }
         }
 
     });
