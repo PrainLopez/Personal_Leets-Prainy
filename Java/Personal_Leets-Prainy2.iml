@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/121_Best_Time_to_Buy_and_Sell_Stock" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/122_Best_Time_to_Buy_and_Sell_Stock_II" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/125_Valid_Palindrome" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/15_3Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/167_Two_Sum_II" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1_Two_Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/206_Reverse_LInked_List" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/215_Kth_Largest_Elementinan_Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/217_Contains_Duplicate" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/242_Valid_Anagram" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2616_Minimize_the_Maximum_Differenceof_Pairs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/33_Search_In_a_Rotated_Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/347_Top_K_Frequent_Elements" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/3_Longest_Substring_Without_Repeating_Characters" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/424_Longest_Repeating_Character_Replacement" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/49_Group_Anagrams" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/704_Binary_Search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/74_Search_A_2d_Matrix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/875_Koko_Eating_Bananas" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
